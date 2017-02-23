@@ -1,0 +1,26 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s;
+    height: 100%;
+}
+
+body {
+    * {
+      box-sizing: border-box;
+    }
+
+    &.dark {
+        background-color: @gray-medium;
+        transition: background-color 0.5s;
+    }
+}
+
+.CodeMirror {
+  height: 100%;
+}
+
+.CodeMirror-scroll {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
